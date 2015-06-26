@@ -86,8 +86,6 @@ namespace SudokuSharp.ViewModels
                                     existingNumbersInTriplet.Add(Cells[i + (x - x%3)][y].Number.Value);
                                          numberFilled++;
                                 }
-                               
-
                             }
 
                             if (numberFilled == 2)
@@ -116,22 +114,8 @@ namespace SudokuSharp.ViewModels
                                 }
                             }
                         }
-
                     }
                 }
-
-
-
-
-
-
-
-            //foreach (var VARIABLE in Cells)
-            //{
-
-            //}
-
-            //DataContext
         }
 
         private List<int> AvailibleNumbers(Point testCell)
@@ -166,8 +150,6 @@ namespace SudokuSharp.ViewModels
                     cellViewModels.Add(Cells[x + offset.X][y + offset.Y]);
                 }
             }
-
-
 
             return cellViewModels;
         }
